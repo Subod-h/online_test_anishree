@@ -7,17 +7,39 @@
 }
 
 
+    /* Custom CSS for Glassmorphism Effect */
+    .navbar-custom {
+      background: rgba(255, 255, 255, 0.1); /* Transparent background */
+      backdrop-filter: blur(10px); /* Blur effect */
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 3D shadow */
+      transition: transform 0.3s ease; /* Smooth 3D transition */
+    }
 
+    .navbar-custom:hover {
+      transform: translateY(-5px); /* Lift the navbar on hover for 3D effect */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    }
 
-.glass1 {
-    background: rgba(0, 26, 19, 0.4);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6.1px);
-    -webkit-backdrop-filter: blur(6.1px);
-    border: 1px solid rgba(51, 214, 174, 0.08);
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+      color: #c54949 !important; /* White text */
+    }
 
-}
+    .navbar-custom .navbar-toggler-icon {
+      background-color: #cf4a4a; /* White toggle icon */
+    }
+
+    /* Optional: Styling for nav items */
+    .nav-link {
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #007bff !important; /* Blue color on hover */
+    }
+  
+
 
 
 .intro{
@@ -45,5 +67,24 @@
 }
 
 
+.card{
+    /* box-shadow: 0 27px 20px -19px rgba(122, 62, 134, .31); */
+    box-shadow: -15px 27px 20px -5px rgba(122, 62, 134, .31);
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    padding: 2rem 1rem;
+    margin: 3rem .5rem;
+    height: 340px;
+    font-size: 1.1rem;
+}
 
+.card-img{
+    width: 3.5rem;
+    margin: auto;
+}
+
+
+.hover1:hover{
+    color: blue;
+}
 

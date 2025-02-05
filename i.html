@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Bootstrap Navbar with Glassmorphism</title>
+  
+  <!-- Bootstrap CSS (from CDN) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.1.1/mdb.min.css" rel="stylesheet">
+
+  <style>
+    /* Custom CSS for Glassmorphism Effect */
+    .navbar-custom {
+      background: rgba(255, 255, 255, 0.1); /* Transparent background */
+      backdrop-filter: blur(10px); /* Blur effect */
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 3D shadow */
+      transition: transform 0.3s ease; /* Smooth 3D transition */
+    }
+
+    .navbar-custom:hover {
+      transform: translateY(-5px); /* Lift the navbar on hover for 3D effect */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+      color: #fff !important; /* White text */
+    }
+
+    .navbar-custom .navbar-toggler-icon {
+      background-color: #fff; /* White toggle icon */
+    }
+
+    /* Optional: Styling for nav items */
+    .nav-link {
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #007bff !important; /* Blue color on hover */
+    }
+  </style>
+</head>
+<body class="bg-dark">
+  <!-- 3D Bootstrap Navbar with Glassmorphism -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom p-3">
+    <a class="navbar-brand" href="#">My Website</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>
